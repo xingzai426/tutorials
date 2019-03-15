@@ -18,7 +18,7 @@
     ```
 1. it may ask for a setting of JAVA_HOME environment variable, try to add this to your `~/.bashrc` and then source it:
     ```bash
-    export JAVA_HOME=/usr/bin
+    export JAVA_HOME=/usr/lib/jvm/java-8-openjdk-amd64 # you should find something similar under /usr/lib/jvm/.
     export PATH=$JAVA_HOME/bin:$PATH
     ```
 1. run `./waf build`, and you should see the notice "'build' finished successfully". Then run `sudo ./waf install` and you are fine.
