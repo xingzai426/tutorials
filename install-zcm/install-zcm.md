@@ -16,6 +16,10 @@
     ```bash
     $ ./waf configure --use-all 
     ```
+    or something like 
+    ```bash
+    $ ./waf configure --use-java --use-nodejs --use-python --python=/usr/bin/python3.6 --use-zmq  --use-elf  --use-third-party  --use-ipc --use-inproc --use-udpm --use-serial
+    ```
 1. it may ask for a setting of JAVA_HOME environment variable, try to add this to your `~/.bashrc` and then source it:
     ```bash
     export JAVA_HOME=/usr/lib/jvm/java-8-openjdk-amd64 # you should find something similar under /usr/lib/jvm/.
